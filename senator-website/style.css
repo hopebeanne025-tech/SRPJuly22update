@@ -1,0 +1,658 @@
+/* ===============================
+   GLOBAL
+=================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0b4f3c;
+    color:#fff;
+}
+
+/* ===============================
+   NAVBAR
+=================================*/
+
+.navbar{
+    background:#06382c;
+    padding:18px 0;
+}
+
+.logo{
+    color:#d8b55b !important;
+    font-size:32px;
+    font-weight:800;
+}
+
+.nav-link{
+    color:#fff !important;
+    font-weight:500;
+    margin:0 12px;
+}
+
+.nav-link:hover{
+    color:#d8b55b !important;
+}
+
+.dropdown-menu{
+    border-radius:15px;
+    border:none;
+}
+
+.social{
+    margin-left:25px;
+}
+
+.social i{
+    color:white;
+    margin-left:15px;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.social i:hover{
+    color:#d8b55b;
+}
+
+/* ===============================
+   HERO
+=================================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#0b4f3c,#06382c);
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:800px;
+
+height:800px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.05);
+
+right:-250px;
+
+top:-250px;
+
+}
+
+.hero-image{
+
+text-align:center;
+
+}
+
+.hero-image img{
+
+width:520px;
+
+max-width:100%;
+
+filter:drop-shadow(0 20px 35px rgba(0,0,0,.45));
+
+}
+
+.hero-text h1{
+    font-size: 88px;      /* dating 90px */
+    font-weight: 500;     /* manipis */
+    line-height: 78px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.gold{
+    color: #d8b55b;
+    font-size: 110px;      /* dating 110px */
+    font-weight: 600;
+}
+
+.gold{
+
+color:#d8b55b;
+
+font-size:110px;
+
+}
+
+.hero-text p{
+
+font-size:22px;
+
+line-height:40px;
+
+max-width:650px;
+
+margin-bottom:35px;
+
+}
+
+/* ===============================
+   BUTTON
+=================================*/
+
+.learn-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:8px;
+
+padding:6px 12px;
+
+border:2px solid #d8b55b;
+
+border-radius:30px;
+
+text-decoration:none;
+
+color:#d8b55b;
+font-size: 12px;
+font-weight:300;
+
+transition:.3s;
+
+}
+
+.learn-btn:hover{
+
+background:#d8b55b;
+
+color:#06382c;
+
+}
+
+.play{
+
+width:28px;
+
+height:28px;
+
+background:#d8b55b;
+
+color:#06382c;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+border-radius:50%;
+
+font-size:12px;
+
+}
+
+/* ===============================
+   SERVICES
+=================================*/
+
+.services{
+
+background:#fff;
+
+padding:100px 0;
+
+color:#222;
+
+}
+
+.services h2{
+
+text-align:center;
+
+font-size:40px;
+
+margin-bottom:60px;
+
+font-weight:700;
+
+}
+
+.service-box{
+
+background:white;
+
+border-radius:20px;
+
+padding:40px;
+
+text-align:center;
+
+box-shadow:0 15px 30px rgba(0,0,0,.1);
+
+transition:.3s;
+
+height:100%;
+
+}
+
+.service-box:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service-box i{
+
+font-size:50px;
+
+color:#0b4f3c;
+
+margin-bottom:20px;
+
+}
+
+.service-box h4{
+
+font-size:20px;
+
+font-weight:600;
+
+}
+
+/* ===============================
+   FOOTER
+=================================*/
+
+footer{
+
+background:#06382c;
+
+padding:25px;
+
+text-align:center;
+
+color:white;
+
+}
+
+/* ===============================
+   MOBILE
+=================================*/
+
+@media(max-width:991px){
+
+.hero{
+
+padding-top:120px;
+
+text-align:center;
+
+}
+
+.hero-text h1{
+
+font-size:60px;
+
+line-height:60px;
+
+}
+
+.gold{
+
+font-size:70px;
+
+}
+
+.hero-image img{
+
+width:350px;
+
+margin-bottom:40px;
+
+}
+
+.hero-text p{
+
+font-size:18px;
+
+line-height:30px;
+
+}
+
+.social{
+
+display:none;
+
+}
+
+}/* ===============================
+   NEWS
+=================================*/
+
+.news{
+    background:#f4f4f4;
+    padding:100px 0;
+}
+
+.news h2{
+    text-align:center;
+    font-size:42px;
+    color:#06382c;
+    margin-bottom:50px;
+    font-weight:700;
+}
+
+.news-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.news-card:hover{
+    transform:translateY(-10px);
+}
+
+.news-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.news-content{
+    padding:25px;
+}
+
+.news-content h4{
+    color:#06382c;
+    margin-bottom:15px;
+}
+
+.news-content a{
+    text-decoration:none;
+    color:#b38b2d;
+    font-weight:600;
+}/* ===== HERO BANNER ===== */
+
+.hero-banner{
+    width:100%;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    border-radius:18px;
+}
+
+.hero-banner img{
+    width:100%;
+    display:block;
+    border-radius:18px;
+    cursor:pointer;
+    transition:transform .6s ease, filter .6s ease, box-shadow .6s ease;
+}
+
+.hero-banner:hover img{
+    transform:scale(1.05);
+    filter:brightness(110%);
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}.hero-banner img:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+}.hero-banner{
+    overflow:hidden;
+    border-radius:18px;
+}
+
+.hero-banner img{
+    transition:transform .6s ease, filter .6s ease;
+}
+
+.hero-banner:hover img{
+    transform:scale(1.08);
+    filter:brightness(110%);
+}
+.hero-banner{
+    margin-top: 80px;   /* palakihin o liitan ang value */
+}margin-top: 50px;
+margin-top: 80px;
+margin-top: 100px;
+margin-top: 120px;
+.top-right-logo{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.top-right-logo img{
+    width: 70px;
+    height: auto;
+}.social{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.right-logo{
+    width: 80px;px;
+    height: 80px;px;
+    object-fit:contain;
+    margin-left:15px;
+}.news-image{
+    width:100%;
+    max-width:2000px;
+    display:block;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    transition:0.4s;
+}
+
+.news-image:hover{
+    transform:scale(1.03);
+}/* ===== NEWS PAGE ===== */
+
+.news-banner img{
+
+width:100%;
+
+height:450px;
+
+object-fit:cover;
+
+}
+
+.news-title{
+
+font-size:42px;
+
+font-weight:bold;
+
+margin-bottom:20px;
+
+}
+
+.news-date{
+
+font-size:18px;
+
+color:#777;
+
+margin-bottom:30px;
+
+}
+
+.gallery{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+transition:.4s;
+
+cursor:pointer;
+
+margin-bottom:20px;
+
+}
+
+.gallery:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}/* NEWS HERO */
+
+.hero-news{
+
+position:relative;
+
+}
+
+.hero-news img{
+
+width:100%;
+
+height:500px;
+
+object-fit:cover;
+
+}
+
+.hero-overlay{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.45);
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+color:#fff;
+
+}
+
+.hero-overlay h1{
+
+font-size:50px;
+
+font-weight:bold;
+
+text-align:center;
+
+}
+
+.hero-overlay p{
+
+font-size:22px;
+
+}
+
+/* Gallery */
+
+.gallery{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.gallery:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}/* PHOTO GALLERY */
+
+.gallery{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:all .5s ease;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.gallery:hover{
+    transform:scale(1.08);
+    box-shadow:0 20px 40px rgba(0,0,0,.4);
+}.hero-title{
+    opacity:0;
+    transform:translateX(-100px);
+    animation:slideLeft 1.4s ease forwards;
+}.hero-title{
+    font-family: "League Spartan", sans-serif;
+    font-size: 88px;
+    font-weight: 700;
+    line-height: .95;
+    letter-spacing: -2px;
+    color: #fff;
+}
+
+.hero-title .gold{
+    color: #d8b55b;
+    font-size: inherit;
+    font-weight: 700;
+}
+
+@keyframes slideLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
