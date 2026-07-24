@@ -1307,23 +1307,52 @@ border-radius:20px;
     font-size:18px;
 
 }
-.about-hero{
-
+.records-section{
+    padding:90px 0;
+    background:linear-gradient(135deg,#0c5b36,#0a3d24);
+    color:#fff;
     position:relative;
-    min-height:100vh;
-
-    display:flex;
-    align-items:center;
-
     overflow:hidden;
+}
 
-    background:
-        linear-gradient(rgba(5,45,30,.82),
-        rgba(5,45,30,.82)),
-        url("images/hero-bg.jpg");
+.records-section h2{
+    font-size:42px;
+    font-weight:700;
+    color:#D4AF37;
+}
 
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
+.records-section p{
+    color:#ddd;
+}
 
+.record-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:35px 20px;
+    transition:.35s;
+    height:100%;
+}
+
+.record-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+.record-card i{
+    font-size:45px;
+    color:#D4AF37;
+    margin-bottom:20px;
+}
+
+.counter{
+    font-size:55px;
+    font-weight:700;
+    color:#fff;
+}
+
+.record-card h5{
+    margin-top:15px;
+    font-weight:600;
 }
