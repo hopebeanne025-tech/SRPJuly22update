@@ -318,7 +318,54 @@ Sectoral Advocacies
     </div>
 
 </div>
+<section class="records-section py-5">
 
+    <div class="container">
+
+        <!-- Title -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-success">Legislative Records</h2>
+            <p class="text-muted">Legislative accomplishments of Senator Robin Padilla</p>
+        </div>
+
+        <!-- Counters -->
+        <div class="row g-4 text-center">
+
+<div class="col-lg-3 col-md-6">
+<div class="record-card">
+<i class="fas fa-file-signature"></i>
+<h2 class="counter" data-target="185">0</h2>
+<h5>Bills Filed</h5>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<div class="record-card">
+<i class="fas fa-handshake"></i>
+<h2 class="counter" data-target="42">0</h2>
+<h5>Co-Authored Bills</h5>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<div class="record-card">
+<i class="fas fa-scale-balanced"></i>
+<h2 class="counter" data-target="18">0</h2>
+<h5>Resolutions</h5>
+</div>
+</div>
+
+<div class="col-lg-3 col-md-6">
+<div class="record-card">
+<i class="fas fa-landmark"></i>
+<h2 class="counter" data-target="15">0</h2>
+<h5>Laws Enacted</h5>
+</div>
+</div>
+
+</div>
+
+</section>
 
 </section>  
 
@@ -699,6 +746,44 @@ Designed by EPOH
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const counters = document.querySelectorAll(".counter");
+
+    counters.forEach(counter => {
+
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
+
+        const updateCounter = () => {
+
+            const increment = Math.ceil(target / 100);
+
+            if (count < target) {
+
+                count += increment;
+
+                if (count > target) count = target;
+
+                counter.innerText = count;
+
+                requestAnimationFrame(updateCounter);
+
+            }
+
+        };
+
+        updateCounter();
+
+    });
+
+});
+</script>
+
+</body>
+</html>
 
 </body>
 </html>
