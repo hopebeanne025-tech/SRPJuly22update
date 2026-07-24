@@ -46,11 +46,11 @@ const swiper = new Swiper(".videoSwiper", {
     speed: 800,
 
     pagination: {
-        el: ".swiper-pagination",
+        el: ".video-pagination",
         clickable: true,
     },
 
-    autoplay: {
+    autoplay: { 
         delay: 5000,
         disableOnInteraction: false,
     },
@@ -323,13 +323,15 @@ Sectoral Advocacies
     <div class="container">
 
         <!-- Title -->
-        <div class="text-center mb-5">
+        <div class="text-center mb-2">
             <h2 class="fw-bold text-success">Legislative Records</h2>
-            <p class="text-muted">Legislative accomplishments of Senator Robin Padilla</p>
+            <p class="records-subtitle">
+    Legislative accomplishments of Senator Robin Padilla
+</p>
         </div>
 
         <!-- Counters -->
-        <div class="row g-4 text-center">
+        <div class="row g-4 text-center">   
 
 <div class="col-lg-3 col-md-6">
 <div class="record-card">
@@ -415,35 +417,67 @@ AT MALAYANG PAGPAPAHAYAG</h4>
     </div>
 
 </section>
-<section class="latest-videos">
+<section class="latest-videos py-5">
 
-    <div class="container">
+<div class="container">
 
-        <h2 class="text-center mb-4">Latest Videos</h2>
+<h2 class="section-title">
+Latest Videos
+</h2>
 
-<div class="swiper videoSwiper">
+<p class="section-subtitle">
+Official video updates from the Office of Senator Robin Padilla
+</p>
 
-    <div class="swiper-wrapper">
+<div class="row">
 
-        <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/zJOGQoWnppk"
-                allowfullscreen></iframe>
-        </div>
+    <!-- MAIN VIDEO -->
+    <div class="col-lg-7">
 
-        <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID2"
-                allowfullscreen></iframe>
-        </div>
+        <div class="main-video">
 
-        <div class="swiper-slide">
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID3"
-                allowfullscreen></iframe>
+            <iframe id="mainVideo"
+
+            src="https://www.youtube.com/embed/zJOGQoWnppk"
+
+            allowfullscreen></iframe>
+
         </div>
 
     </div>
 
-    <div class="swiper-pagination"></div>
+    <!-- PLAYLIST -->
+    <div class="col-lg-5">
 
+       <<!-- Video 1 -->
+<div class="playlist-item active" data-video="BLpm2_36I8U">
+
+    <div class="thumb">
+        <img src="https://img.youtube.com/vi/BLpm2_36I8U/mqdefault.jpg">
+        <i class="fa-solid fa-circle-play"></i>
+    </div>
+
+    <div>
+        <h6>Senate Video 1</h6>
+        <small>Official Video</small>
+    </div>
+
+</div>
+
+<!-- Video 2 -->
+<div class="playlist-item" data-video="J9k0DeGr4m0">
+
+    <div class="thumb">
+        <img src="https://img.youtube.com/vi/J9k0DeGr4m0/mqdefault.jpg">
+        <i class="fa-solid fa-circle-play"></i>
+    </div>
+
+    <div>
+        <h6>Senate Video 2</h6>
+        <small>Official Video</small>
+    </div>
+
+</div>
 </div>
 
 </section>
@@ -780,7 +814,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+const videoSwiper = new Swiper(".videoSwiper", {
+
+    loop: true,
+
+    allowTouchMove: false, // <-- idagdag ito
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    }
+
+});
+
 </script>
+
+
 
 </body>
 </html>
