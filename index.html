@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Office of Senator Robin Padilla</title>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -20,11 +20,8 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
 
@@ -33,10 +30,6 @@
 
 <body>
 
-AOS.init({
-    duration:1000,
-    once:true
-});
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -97,7 +90,7 @@ const swiper = new Swiper(".videoSwiper", {
     <li>
         <a class="dropdown-item" href="about.html#srp">SRP: Sino si Robin Padilla?</a>
         
-        </a>
+
     </li>
 
     <li>
@@ -269,6 +262,9 @@ const swiper = new Swiper(".videoSwiper", {
 </div>
 
 <div class="col-lg-6">
+    </div>
+
+</div>
 
 <div class="hero-text">
 
@@ -339,7 +335,7 @@ const swiper = new Swiper(".videoSwiper", {
         <!-- Counters -->
         <div class="row g-4 text-center">   
 
-<<div class="col">
+<div class="col">
     <div class="record-card"
          data-bs-toggle="modal"
          data-bs-target="#authoredBillsModal">
@@ -391,11 +387,10 @@ const swiper = new Swiper(".videoSwiper", {
 
 </div>
 
-</section>
 
 </section>  
 
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+        <div class="row g-3 justify-content-center">
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="news-card">
@@ -403,7 +398,7 @@ const swiper = new Swiper(".videoSwiper", {
                     <div class="news-content">
                         <h4>MGA BATAS AT LEHISLATURANG TRABAHO
 NI SENADOR ROBIN PADILLA</h4>
-                        <p>Latest activities and official announcements from the Office of the Senator.</p>
+                        
                         <a href="news1.html" class="btn btn-success">
  Alamin ang mga nagawa</a>
                     </div>
@@ -415,7 +410,7 @@ NI SENADOR ROBIN PADILLA</h4>
                     <div class="news-content">
                         <h4>MGA INISIYATIBO NI SENATOR ROBIN PARA
 SA ATING MGA KABABATANG MUSLIM</h4>
-                        <p>Updates on community outreach and public service initiatives.</p>
+                
                         <a href="news1.html" class="btn btn-success">
     Basahin ang mga inisyatibo
 </a>
@@ -429,7 +424,7 @@ SA ATING MGA KABABATANG MUSLIM</h4>
                     <div class="news-content">
                         <h4>MGA LEHISLASYON SA IMPORMASYON 
 AT MALAYANG PAGPAPAHAYAG</h4>
-                        <p>Highlights of bills, resolutions, and committee work.</p>
+                       
                         <a href="news1.html" class="btn btn-success">
                             Tingnan ang buong detalye</a>
                     </div>
@@ -442,7 +437,10 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 
 </section>
 <section class="latest-videos py-5">
-
+<div class="bg-diamond diamond1"></div>
+<div class="bg-diamond diamond2"></div>
+<div class="bg-diamond diamond3"></div>
+<div class="bg-diamond diamond4"></div>
 <div class="container">
 
 <h2 class="section-title">
@@ -454,7 +452,15 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 </p>
 
 <div class="row">
+<div class="section-heading text-center mb-5">
 
+    <span class="heading-line"></span>
+
+    <h2 class="heading-title">LATEST NEWS</h2>
+
+    <span class="heading-line"></span>
+
+</div>
     <!-- MAIN VIDEO -->
     <div class="col-lg-7">
 
@@ -505,96 +511,65 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 </div>
 
 </section>
-<section class="contact-section">
+<section class="contact-section py-5">
 
     <div class="container">
 
-        <div class="row">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
 
-            <div class="col-lg-6">
+            <h1 class="contact-title">CONTACT US</h1>
 
-                <h2>Contact the Office</h2>
+        
 
-                <p>
-                    For inquiries, requests for assistance, or official correspondence,
-                    please use the contact information below.
-                </p>
+        </div>
 
-                <div class="contact-info">
+        <!-- Contact Form -->
+        <div class="row justify-content-center">
 
-                    <p><i class="fa-solid fa-location-dot"></i> GSIS Building, Financial Center, Pasay City</p>
+            <div class="col-lg-8">
 
-                    <p><i class="fa-solid fa-phone"></i> (+63) 2 8552-6601</p>
+                <div class="contact-card">
 
-                    <p><i class="fa-solid fa-envelope"></i> info@example.gov.ph</p>
+                    <input
+                        type="text"
+                        class="form-control mb-3"
+                        placeholder="Your Name">
 
-                </div>
+                    <input
+                        type="email"
+                        class="form-control mb-3"
+                        placeholder="Email Address">
 
-            </div>
+                    <textarea
+                        class="form-control mb-3"
+                        rows="6"
+                        placeholder="Your Message"></textarea>
 
-            <div class="col-lg-6">
+                    <div class="mb-4">
 
- <input type="text" placeholder="Your Name" class="form-control mb-3">
+                        <label for="attachment" class="attach-btn">
 
-<input type="email" placeholder="Email Address" class="form-control mb-3">
+                            <i class="fa-solid fa-paperclip"></i>
 
-<textarea
-    class="form-control mb-3"
-    rows="5"
-    placeholder="Your Message">
-</textarea>
+                            Attach File
 
-<div class="mb-3">
-    <label for="attachment" class="attach-btn">
-        <i class="fa-solid fa-paperclip"></i> Attach File
-    </label>
+                        </label>
 
-    <input
-        type="file"
-        id="attachment"
-        class="d-none"
-        accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
-</div>
+                        <input
+                            type="file"
+                            id="attachment"
+                            class="d-none"
+                            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
 
-<button class="btn btn-warning btn-lg">
+                    </div>
+
+                    <button class="btn send-btn">
     <i class="fa-solid fa-paper-plane"></i>
-    Send Message
+    Send
 </button>
 
-    </div>
-
-</section>
-
-<section class="about-section">
-
-        <div class="container">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-6">
-
-                    <img src="image/SRP Logo Gold.png" class="img-fluid about-img" alt="Robin Padilla">
-
                 </div>
-
-            <div class="col-lg-6">
-
-                <h5 class="section-subtitle">ABOUT THE SENATOR</h5>
-
-                <h2>Robin Padilla</h2>
-
-                <p>
-                    Welcome to the Office of Senator Robin Padilla. This website provides information
-                    about legislative work, public service initiatives, and updates from the Office
-                    of the Senator.
-                </p>
-
-                <a href="#" class="learn-btn">
-                    <span class="play">
-                        <i class="fa-solid fa-play"></i>
-                    </span>
-                    READ BIOGRAPHY
-                </a>
 
             </div>
 
@@ -603,175 +578,9 @@ AT MALAYANG PAGPAPAHAYAG</h4>
     </div>
 
 </section>
-<section class="legislation">
 
-    <div class="container">
 
-        <h2 class="text-center">Legislative Work</h2>
-        <p class="text-center section-text">
-            Learn more about legislative initiatives and official work of the Office.
-        </p>
 
-        <div class="row g-4">
-
-            <div class="col-md-4">
-                <div class="leg-card">
-                    <i class="fa-solid fa-scale-balanced"></i>
-                    <h4>Bills Filed</h4>
-                    <p>View information about proposed bills and legislative measures.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="leg-card">
-                    <i class="fa-solid fa-landmark"></i>
-                    <h4>Resolutions</h4>
-                    <p>Official resolutions and Senate initiatives.</p>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="leg-card">
-                    <i class="fa-solid fa-book"></i>
-                    <h4>Committee Work</h4>
-                    <p>Committee participation and legislative reports.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section><section id="bills-filed" class="section">
-    <div class="container">
-        <h2>Bills Filed</h2>
-        <p>List of Senate Bills authored and sponsored.</p>
-
-        <div class="card">
-            <h4>Senate Bill No. 1001</h4>
-            <p>Sample Bill Title</p>
-            <small>Status: Pending</small>
-        </div>
-
-        <div class="card">
-            <h4>Senate Bill No. 1002</h4>
-            <p>Sample Bill Title</p>
-            <small>Status: Approved</small>
-        </div>
-    </div>
-</section><section id="laws-resolutions" class="section">
-    <div class="container">
-        <h2>Laws / Resolutions Authored</h2>
-        <p>Resolutions and Republic Acts authored or co-authored.</p>
-
-        <div class="card">
-            <h4>Senate Resolution No. 150</h4>
-            <p>Recognizing outstanding Filipino achievements.</p>
-        </div>
-
-        <div class="card">
-            <h4>Republic Act XXXX</h4>
-            <p>Short description of the enacted law.</p>
-        </div>
-    </div>
-</section><section id="latest-news" class="section">
-    <div class="container">
-        <h2>Latest News</h2>
-
-        <div class="card">
-            <h4>Community Outreach Program</h4>
-            <p>July 18, 2026</p>
-            <p>Senator visits local communities to provide assistance.</p>
-        </div>
-
-        <div class="card">
-            <h4>Senate Hearing</h4>
-            <p>July 10, 2026</p>
-            <p>Participation in committee discussions on national issues.</p>
-        </div>
-    </div>
-</section><section id="services" class="section">
-    <div class="container">
-        <h2>Services</h2>
-
-        <div class="card">
-            <h4>Medical Assistance</h4>
-            <p>Information on available medical assistance programs.</p>
-        </div>
-
-        <div class="card">
-            <h4>Educational Assistance</h4>
-            <p>Scholarship and educational support.</p>
-        </div>
-
-        <div class="card">
-            <h4>Livelihood Assistance</h4>
-            <p>Programs supporting small businesses and employment.</p>
-        </div>
-
-        <div class="card">
-            <h4>Contact the Office</h4>
-            <p>Reach out for concerns, requests, or inquiries.</p>
-        </div>
-    </div>
-</section>
-<!-- ================= SERVICES ================= -->
-
-<section class="services">
-
-<div class="container">
-
-<h2>Office Services</h2>
-
-<div class="row">
-
-<div class="col-md-3">
-
-<div class="service-box">
-
-<i class="fa-solid fa-heart-pulse"></i>
-
-<h4>Medical Assistance</h4>
-
-</div>
-
-</div>
-
-<div class="col-md-3">
-
-<div class="service-box">
-
-<i class="fa-solid fa-graduation-cap"></i>
-
-<h4>Educational Assistance</h4>
-
-</div>
-
-</div>
-
-<div class="col-md-3">
-
-<div class="service-box">
-
-<i class="fa-solid fa-briefcase"></i>
-
-<h4>Livelihood</h4>
-
-</div>
-
-</div>
-
-<div class="col-md-3">
-
-<div class="service-box">
-
-<i class="fa-solid fa-file-lines"></i>
-
-<h4>Request Assistance</h4>
-
-</div>
-
-</div>
 
 </div>
 
@@ -780,28 +589,44 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 </section>
 
 <!-- ================= FOOTER ================= -->
-
-
 <footer class="footer">
 
-<div class="container">
+    <div class="container footer-wrapper">
 
-<p>
+        <div></div>
 
-© 2026 Office of Senator Robin Padilla
+        <!-- Social Icons -->
+        <div class="footer-socials">
 
-</p>
+            <a href="https://www.facebook.com/SenRobinhoodPadilla" class="footer-social" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
 
-<p>
+           <a href="https://www.instagram.com/" class="footer-social" target="_blank">
+                <i class="fab fa-instagram"></i>
 
-Designed by EPOH
+            <a href="https://x.com/" class="footer-social" target="_blank">
+                <i class="fab fa-x-twitter"></i>
+            </a>
 
-</p>
+           <a href="https://www.tiktok.com/" class="footer-social" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
 
-</div>
+            <a href="https://www.youtube.com/" class="footer-social" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+
+  <!-- Senate Logo -->
+        <a href="index.html" class="footer-logo">
+            <img src="images/senate-logo.png" alt="Senate Logo">
+        </a>
+
+    </div>
 
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
@@ -921,64 +746,33 @@ document.addEventListener("DOMContentLoaded", () => {
     counters.forEach(counter=>observer.observe(counter));
 
 });
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 300){
+        backToTop.classList.add("show");
+    }else{
+        backToTop.classList.remove("show");
+    }
+
+});
+
+backToTop.addEventListener("click", function(e){
+
+    e.preventDefault();
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+});
 </script>
 
-<!-- Robin Padilla Biography -->
-<div class="offcanvas offcanvas-end text-bg-dark"
-     tabindex="-1"
-     id="robinBio">
-
-    <div class="offcanvas-header border-bottom">
-        <h4 class="offcanvas-title">
-            <span style="color:#d4af37;">Senator Robin Padilla</span>
-        </h4>
-
-        <button type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas">
-        </button>
-    </div>
-
-    <div class="offcanvas-body">
-
-        <img src="images/TR.jpg"
-             class="img-fluid rounded mb-3"
-             alt="Robin Padilla">
-
-        <h5>Biography</h5>
-
-        <p>
-            Robinhood Ferdinand Cariño Padilla, popularly known as
-            Robin Padilla, is a Filipino actor, film producer,
-            martial artist, and public servant.
-        </p>
-
-        <p>
-            He was elected Senator of the Republic of the Philippines
-            in 2022 after receiving the highest number of votes in the
-            national elections.
-        </p>
-
-        <p>
-            Throughout his career, he has advocated for peace,
-            public service, cultural preservation, and programs
-            that promote the welfare of the Filipino people.
-        </p>
-
-        <hr>
-
-        <h6>Public Service</h6>
-
-        <ul>
-            <li>Senator of the Republic of the Philippines</li>
-            <li>Advocate for Peace and Unity</li>
-            <li>Supporter of Education and Cultural Heritage</li>
-            <li>Promoter of Sports and Youth Development</li>
-        </ul>
-
-    </div>
-
-</div>
-
+<a href="#" id="backToTop">▲</a>
+    <i class="fas fa-chevron-up"></i>
+</a>
 </body>
 </html>
