@@ -1263,71 +1263,49 @@ box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 /* ABOUT PAGE */
 
+/* ABOUT HERO */
+
 .page-hero{
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("images/hero-bg.jpg") center/cover;
 
-padding:170px 0 100px;
-
-background:linear-gradient(rgba(0,0,0,.65),
-rgba(0,0,0,.65)),
-url("../images/bin4.jpg");
-
-background-size:cover;
-
-background-position:center;
-
-color:#fff;
-
-text-align:center;
-
+    padding:170px 20px 90px;
+    color:#fff;
+    text-align:center;
 }
 
 .page-hero h1{
-
-font-size:60px;
-
-font-weight:700;
-
+    font-size:52px;
+    font-weight:800;
+    margin-bottom:15px;
 }
 
 .page-hero p{
-
-font-size:20px;
-
-margin-top:20px;
-
+    font-size:20px;
+    max-width:700px;
+    margin:auto;
 }
 
+/* ABOUT SECTION */
+
 .about-page{
+    padding:80px 0;
+}
 
-padding:90px 0;
-
+.about-page:nth-child(even){
+    background:#f8f9fa;
 }
 
 .about-page h2{
-
-font-size:40px;
-
-font-weight:700;
-
-margin-bottom:25px;
-
-color:#1B4332;
-
+    color:#006837;
+    font-weight:700;
+    margin-bottom:25px;
 }
 
-.about-page img{
-
-border-radius:20px;
-
-}.about-logo{
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 420px;
-    opacity: .12;
-    z-index: 1;
-    pointer-events: none;
+.about-page p{
+    line-height:1.9;
+    text-align:justify;
 }
 .content-section{
 
@@ -1392,8 +1370,82 @@ margin-bottom:40px;
 
 .records-section p{
     color:#ddd;
+    
 }
 
+.record-card{
+
+    cursor:pointer;
+
+    position:relative;
+
+    overflow:hidden;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:22px 18px;
+    transition:.35s;
+    height:100%;
+
+}
+.record-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:url("images/senate seal.png") center center no-repeat;
+
+    background-size:200px;
+
+    opacity:.06;
+
+    pointer-events:none;
+
+}
+.record-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100%;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+
+    transform:rotate(25deg);
+
+    transition:.8s;
+
+}
+
+.record-card:hover::after{
+
+    top:100%;
+
+    left:100%;
+
+}
+
+.record-card:hover{
+
+    transform:translateY(-12px) scale(1.03);
+
+}
 .record-card{
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.15);
@@ -1416,9 +1468,49 @@ margin-bottom:40px;
 }
 
 .counter{
-    font-size:42px;
-    font-weight:700;
-    color:#fff;
+
+    color:#D4AF37;
+
+    text-shadow:
+
+    0 0 5px rgba(212,175,55,.25),
+
+    0 0 15px rgba(212,175,55,.2);
+
+}
+
+.record-card:hover .record-icon{
+
+    animation:bounce .8s;
+
+}
+
+@keyframes bounce{
+
+0%{
+
+transform:scale(1);
+
+}
+
+40%{
+
+transform:scale(1.18);
+
+}
+
+70%{
+
+transform:scale(.95);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
 }
 
 .record-card h5{
@@ -1607,5 +1699,254 @@ gap:15px;
     border-radius:20px;
 
     box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+/*================ ABOUT HERO ================*/
+
+.about-hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("images/about-bg.jpg") center/cover;
+
+    color:#fff;
+
+    padding-top:120px;
+
+}
+
+.hero-subtitle{
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.about-hero h1{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    margin:20px 0;
+
+}
+
+.about-hero p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.about-hero-img{
+
+    max-height:650px;
+
+}
+
+@media(max-width:991px){
+
+.about-hero{
+
+text-align:center;
+
+padding:150px 20px 80px;
+
+}
+
+.about-hero h1{
+
+font-size:40px;
+
+}
+
+.about-hero-img{
+
+margin-top:40px;
+
+max-height:450px;
+
+}
+
+}
+/*================ ABOUT HERO ================*/
+
+.about-hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("images/about-bg.jpg") center/cover;
+
+    color:#fff;
+
+    padding-top:120px;
+
+}
+
+.hero-subtitle{
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.about-hero h1{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    margin:20px 0;
+
+}
+
+.about-hero p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.about-hero-img{
+
+    max-height:650px;
+
+}
+
+@media(max-width:991px){
+
+.about-hero{
+
+text-align:center;
+
+padding:150px 20px 80px;
+
+}
+
+.about-hero h1{
+
+font-size:40px;
+
+}
+
+.about-hero-img{
+
+margin-top:40px;
+
+max-height:450px;
+
+}
+
+}
+/*================ BIOGRAPHY =================*/
+
+.biography-section{
+
+    padding:100px 0;
+
+    background:#ffffff;
+
+}
+
+.biography-img{
+
+    width:100%;
+
+    max-width:420px;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.section-label{
+
+    display:inline-block;
+
+    color:#D4AF37;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+.section-title{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#006837;
+
+    margin-bottom:25px;
+
+}
+
+.biography-section p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    color:#444;
+
+}
+
+@media(max-width:991px){
+
+.biography-section{
+
+text-align:center;
+
+}
+
+.biography-section p{
+
+text-align:left;
+
+}
+
+.section-title{
+
+font-size:32px;
+
+margin-top:25px;
+
+}
 
 }
