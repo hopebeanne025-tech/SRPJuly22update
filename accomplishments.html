@@ -272,6 +272,7 @@ hero
     </div>
 
 </section>
+
 <section id="authored" class="content-section">
 
 <div class="container">
@@ -281,42 +282,47 @@ hero
 <span class="section-label">
 LEGISLATIVE RECORDS
 </span>
+<div class="row mb-4">
 
-<h2 class="section-title">
-Authored Bills
-</h2>
+    <div class="col-lg-6 mx-auto">
 
-</div>
+        <input
+            type="text"
+            id="searchBill"
+            class="form-control form-control-lg"
+            placeholder="🔍 Search Bill No. or Title...">
 
-<div class="row g-4">
-
-<div class="col-md-4">
-
-<div class="bill-card">
-
-<i class="fas fa-file-signature"></i>
-
-<h4>Senate Bill No. XXXX</h4>
-
-<p>
-Short description of the proposed legislation.
-</p>
-
-<a href="#" class="btn btn-outline-warning">
-Read More
-</a>
+    </div>
 
 </div>
+<!-- =========================AUTHORED BILLS========================= -->
 
+<section class="authored-bills py-5">
+    <div class="container">
+
+        <h2 class="section-title text-center mb-5">
+            Authored Bills
+        </h2>
+
+        <div id="bills-container" class="row g-4"></div>
+
+<!-- Pagination -->
+<div class="text-center mt-5">
+    <button id="prevBtn" class="btn btn-outline-danger me-2">Previous</button>
+
+    <span id="pageInfo" class="fw-bold mx-3"></span>
+
+    <button id="nextBtn" class="btn btn-danger ms-2">Next</button>
 </div>
 
+    
 </div>
+        </div>
 
-</div>
-
+    </div>
 </section>
-<!-- ================= FOOTER ================= -->
 
+<!-- ================= FOOTER ================= -->
 
 <footer class="footer">
 
@@ -458,6 +464,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 
-
+<script src="js/bills.js"></script>
 </body>
 </html>
