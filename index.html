@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-</head>
+<head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +56,6 @@ const swiper = new Swiper(".videoSwiper", {
     },
 });
 </script>
-<body>
     
 <!-- ================= NAVBAR ================= -->
 
@@ -93,14 +92,40 @@ const swiper = new Swiper(".videoSwiper", {
             About
         </a>
 
-        <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="about.html#SRP: Sino si Robin Padilla?">SRP: Sino si Robin Padilla?</a></li>
-            <li><a class="dropdown-item" href="about.html#biography">Biography</a></li>
-            <li><a class="dropdown-item" href="about.html#Core Belief, Vision">Core Belief, Vision</a></li>
-            <li><a class="dropdown-item" href="about.html#Committee Memberships">Committee Memberships</a></li>
-            <li><a class="dropdown-item" href="about.html#Awards">Awards</a></li>
-                     <li><a class="dropdown-item" href="about.html#Career Timeline">Career Timeline</a></li> 
-        </ul>
+       <ul class="dropdown-menu custom-dropdown">
+
+    <li>
+        <a class="dropdown-item" href="about.html#srp">SRP: Sino si Robin Padilla?</a>
+        
+        </a>
+    </li>
+
+    <li>
+       <a class="dropdown-item" href="about.html#biography">Biography</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#vision">Core Belief & Vision</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#committee">Committee Memberships</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#awards">Awards</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#timeline">Career Timeline</a>
+        </a>
+    </li>
+
+</ul>
     </li>
 
    <li class="nav-item dropdown">
@@ -116,38 +141,25 @@ const swiper = new Swiper(".videoSwiper", {
 <ul class="dropdown-menu">
 
 <li>
-<a class="dropdown-item"
-href="accomplishments.html#authored">
-Authored Bills and Resolutions
+<a class="dropdown-item" href="accomplishments.html#authored">Authored Bills</a>
 </a>
 </li>
 
 <li>
-<a class="dropdown-item"
-href="accomplishments.html#coauthored">
-Co-Authored Bills/Resolutions
+<a class="dropdown-item" href="accomplishments.html#coauthored">Co-Authored Bills</a>
 </a>
 </li>
 
 <li>
-<a class="dropdown-item"
-href="accomplishments.html#laws">
-Bills Passed into Law
-</a>
+<a class="dropdown-item" href="accomplishments.html#laws">Bills Passed into Law</a>
 </li>
 
 <li>
-<a class="dropdown-item"
-href="accomplishments.html#reports">
-Committee Reports
-</a>
+<a class="dropdown-item" href="accomplishments.html#reports">Committee Reports</a>
 </li>
 
 <li>
-<a class="dropdown-item"
-href="accomplishments.html#advocacies">
-Sectoral Advocacies
-</a>
+<a class="dropdown-item" href="accomplishments.html#advocacies">Sectoral Advocacies</a>
 </li>
 
 </ul>
@@ -165,33 +177,23 @@ Sectoral Advocacies
     <ul class="dropdown-menu">
 
         <li>
-            <a class="dropdown-item" href="#news">
-                News
-            </a>
+          <a class="dropdown-item" href="news.html#news">News</a>
         </li>
 
         <li>
-            <a class="dropdown-item" href="#media-press-releases">
-                Media/Press Releases
-            </a>
+          <a class="dropdown-item" href="news.html#press">Media Releases</a>
         </li>
 
         <li>
-            <a class="dropdown-item" href="#speeches">
-                Speeches
-            </a>
+         <a class="dropdown-item" href="news.html#speeches">Speeches</a>
         </li>
 
         <li>
-            <a class="dropdown-item" href="#videos">
-                Videos
-            </a>
+         <a class="dropdown-item" href="news.html#videos">Videos</a>
         </li>
 
         <li>
-            <a class="dropdown-item" href="#photo-gallery">
-                Photo Gallery
-            </a>
+          <a class="dropdown-item" href="news.html#gallery">Photo Gallery</a>
         </li>
 
     </ul>
@@ -206,10 +208,12 @@ Sectoral Advocacies
         </a>
 
         <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#medical Assistance">Medical Assistance</a></li>
-            <li><a class="dropdown-item" href="#Education Assistance">Education Assistance</a></li>
-            <li><a class="dropdown-item" href="#Frequently Asked-Questions">Frequently Asked Questions</a></li>
-            <li><a class="dropdown-item" href="#Downloadable Forms(OSRP,if any)">Downloadable Forms(OSRP,if any)</a></li>
+            
+             <li><a class="dropdown-item" href="services.html#medical">Medical Assistance</a></li>
+            <li><a class="dropdown-item" href="services.html#education">Educational Assistance</a></li>
+            <li><a class="dropdown-item" href="services.html#faq">Frequently Asked Questions</a></li>
+            <li><a class="dropdown-item" href="services.html#forms">Downloadable Forms</a>
+            </li>
         </ul>
     </li>
 
@@ -280,7 +284,9 @@ Sectoral Advocacies
 
 </p>
 
-<a href="#" class="learn-btn">
+<a href="#" class="learn-btn"
+   data-bs-toggle="offcanvas"
+   data-bs-target="#robinBio">
     <span class="play-icon">
         <i class="fas fa-play"></i>
     </span>
@@ -438,11 +444,11 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 <div class="container">
 
 <h2 class="section-title">
-Latest Videos
+
 </h2>
 
 <p class="section-subtitle">
-Official video updates from the Office of Senator Robin Padilla
+
 </p>
 
 <div class="row">
@@ -465,7 +471,7 @@ Official video updates from the Office of Senator Robin Padilla
     <!-- PLAYLIST -->
     <div class="col-lg-5">
 
-       <<!-- Video 1 -->
+       <!-- Video 1 -->
 <div class="playlist-item active" data-video="BLpm2_36I8U">
 
     <div class="thumb">
@@ -915,7 +921,62 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 </script>
 
+<!-- Robin Padilla Biography -->
+<div class="offcanvas offcanvas-end text-bg-dark"
+     tabindex="-1"
+     id="robinBio">
 
+    <div class="offcanvas-header border-bottom">
+        <h4 class="offcanvas-title">
+            <span style="color:#d4af37;">Senator Robin Padilla</span>
+        </h4>
+
+        <button type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas">
+        </button>
+    </div>
+
+    <div class="offcanvas-body">
+
+        <img src="images/TR.jpg"
+             class="img-fluid rounded mb-3"
+             alt="Robin Padilla">
+
+        <h5>Biography</h5>
+
+        <p>
+            Robinhood Ferdinand Cariño Padilla, popularly known as
+            Robin Padilla, is a Filipino actor, film producer,
+            martial artist, and public servant.
+        </p>
+
+        <p>
+            He was elected Senator of the Republic of the Philippines
+            in 2022 after receiving the highest number of votes in the
+            national elections.
+        </p>
+
+        <p>
+            Throughout his career, he has advocated for peace,
+            public service, cultural preservation, and programs
+            that promote the welfare of the Filipino people.
+        </p>
+
+        <hr>
+
+        <h6>Public Service</h6>
+
+        <ul>
+            <li>Senator of the Republic of the Philippines</li>
+            <li>Advocate for Peace and Unity</li>
+            <li>Supporter of Education and Cultural Heritage</li>
+            <li>Promoter of Sports and Youth Development</li>
+        </ul>
+
+    </div>
+
+</div>
 
 </body>
 </html>
