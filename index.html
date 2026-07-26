@@ -324,7 +324,7 @@ Sectoral Advocacies
 
         <!-- Title -->
         <div class="text-center mb-2">
-            <h2 class="fw-bold text-success">Legislative Records</h2>
+            <h2 class="records-title">Legislative Records</h2>
             <p class="records-subtitle">
     Legislative accomplishments of Senator Robin Padilla
 </p>
@@ -333,34 +333,50 @@ Sectoral Advocacies
         <!-- Counters -->
         <div class="row g-4 text-center">   
 
-<div class="col-lg-3 col-md-6">
-<div class="record-card">
-<i class="fas fa-file-signature"></i>
-<h2 class="counter" data-target="185">0</h2>
-<h5>Bills Filed</h5>
-</div>
-</div>
-
-<div class="col-lg-3 col-md-6">
-<div class="record-card">
-<i class="fas fa-handshake"></i>
-<h2 class="counter" data-target="42">0</h2>
-<h5>Co-Authored Bills</h5>
-</div>
+<div class="col">
+    <div class="record-card">
+        <div class="record-icon">
+            <i class="fas fa-file-signature"></i>
+        </div>
+        <h2 class="counter" data-target="130">0</h2>
+        <h5>Authored Bills</h5>
+    </div>
 </div>
 
-<div class="col-lg-3 col-md-6">
-<div class="record-card">
-<i class="fas fa-scale-balanced"></i>
-<h2 class="counter" data-target="18">0</h2>
-<h5>Resolutions</h5>
-</div>
+<div class="col">
+    <div class="record-card">
+        <div class="record-icon">
+            <i class="fas fa-users"></i>
+        </div>
+        <h2 class="counter" data-target="65">0</h2>
+        <h5>Co-Authored Bills</h5>
+    </div>
 </div>
 
-<div class="col-lg-3 col-md-6">
-<div class="record-card">
+<div class="col">
+    <div class="record-card">
+        <div class="record-icon">
+            <i class="fas fa-scroll"></i>
+        </div>
+        <h2 class="counter" data-target="84">0</h2>
+        <h5>Authored Resolutions</h5>
+    </div>
+</div>
+
+<div class="col">
+    <div class="record-card">
+        <div class="record-icon">
+            <i class="fas fa-people-group"></i>
+        </div>
+        <h2 class="counter" data-target="140">0</h2>
+        <h5>Co-Authored Resolutions</h5>
+    </div>
+</div>
+
+<div class="col">
+    <div class="record-card">
 <i class="fas fa-landmark"></i>
-<h2 class="counter" data-target="15">0</h2>
+<h2 class="counter" data-target="29">0</h2>
 <h5>Laws Enacted</h5>
 </div>
 </div>
@@ -371,7 +387,7 @@ Sectoral Advocacies
 
 </section>  
 
-        <div class="row g-4">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
 
             <div class="col-lg-4 col-md-6 col-12">
                 <div class="news-card">
@@ -757,7 +773,6 @@ Official video updates from the Office of Senator Robin Padilla
 
 <!-- ================= FOOTER ================= -->
 
-<footer>
 
 <footer class="footer">
 
@@ -831,13 +846,76 @@ const videoSwiper = new Swiper(".videoSwiper", {
     }
 
 });
+const mainVideo=document.getElementById("mainVideo");
 
+const items=document.querySelectorAll(".playlist-item");
+
+items.forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+items.forEach(i=>i.classList.remove("active"));
+
+item.classList.add("active");
+
+const id=item.dataset.video;
+
+mainVideo.src="https://www.youtube.com/embed/"+id;
+
+});
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+    const counters = document.querySelectorAll(".counter");
+
+    const speed = 2000;
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (!entry.isIntersecting) return;
+
+            const counter = entry.target;
+            const target = +counter.dataset.target;
+
+            let start = 0;
+            const startTime = performance.now();
+
+            function animate(currentTime){
+
+                const progress = Math.min((currentTime - startTime) / speed, 1);
+
+                // Ease Out Animation
+                const ease = 1 - Math.pow(1 - progress, 4);
+
+                const value = Math.floor(ease * target);
+
+                counter.textContent = value.toLocaleString();
+
+                if(progress < 1){
+                    requestAnimationFrame(animate);
+                }else{
+                    counter.textContent = target.toLocaleString();
+                }
+
+            }
+
+            requestAnimationFrame(animate);
+
+            observer.unobserve(counter);
+
+        });
+
+    },{threshold:.5});
+
+    counters.forEach(counter=>observer.observe(counter));
+
+});
 </script>
 
 
-
-</body>
-</html>
 
 </body>
 </html>
