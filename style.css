@@ -448,43 +448,65 @@ display:none;
 }
 
 .news-card{
-    background:white;
-    border-radius:20px;
-    overflow:hidden;
-    box-shadow:0 15px 30px rgba(0,0,0,.08);
-    transition:.3s;
+
+border-radius:20px;
+
+overflow:hidden;
+
+background:white;
+
+box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+transition:.4s;
+
+height:100%;
+
 }
 
 .news-card:hover{
-    transform:translateY(-10px);
+
+transform:translateY(-10px);
+
 }
 
 .news-card img{
-    width:100%;
-    height:240px;
-    object-fit:cover;
+
+height:220px;
+
+width:100%;
+
+object-fit:cover;
+
 }
 
 .news-content{
-    padding:25px;
+
+padding:25px;
+
+}
+
+.news-content small{
+
+color:#888;
+
 }
 
 .news-content h4{
-    color:#06382c;
-    margin-bottom:15px;
-}
 
-.news-content a{
-    text-decoration:none;
-    color:#b38b2d;
-    font-weight:600;
-}/* ===== HERO BANNER ===== */
+margin-top:10px;
+
+font-weight:700;
+
+color:#0B5D3B;
+
+}
+/* ===== HERO BANNER ===== */
 
 .hero-banner{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0\px 0;
+    padding:0;
 }
 
 .hero-banner{
@@ -1309,7 +1331,27 @@ box-shadow:0 15px 35px rgba(0,0,0,.25);
 }
 .content-section{
 
-    padding:100px 0;
+position:relative;
+
+overflow:hidden;
+
+}
+
+.content-section::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:url(images/senate-pattern.png) center no-repeat;
+
+background-size:420px;
+
+opacity:.04;
+
+pointer-events:none;
 
 }
 
@@ -1871,21 +1913,82 @@ max-height:450px;
 
 .biography-section{
 
+    background:#fff;
     padding:100px 0;
 
-    background:#ffffff;
+}
+
+.bio-card{
+
+    background:#fafafa;
+    border-left:5px solid #d4af37;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+    transition:.35s;
+
+}
+
+.bio-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.bio-card h4{
+
+    color:#0b3d2e;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.bio-card i{
+
+    color:#d4af37;
+
+    margin-right:10px;
+
+}
+
+.bio-card p{
+
+    color:#555;
+
+    line-height:1.9;
+
+    margin-bottom:15px;
 
 }
 
 .biography-img{
 
-    width:100%;
-
-    max-width:420px;
-
     border-radius:20px;
 
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
+    box-shadow:0 25px 50px rgba(0,0,0,.18);
+
+    transition:.4s;
+
+}
+
+.biography-img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.lead{
+
+    color:#444;
+
+    font-size:20px;
+
+    margin-bottom:30px;
 
 }
 
@@ -1946,6 +2049,827 @@ text-align:left;
 font-size:32px;
 
 margin-top:25px;
+
+}
+
+}
+/* ================= PAGE BANNER ================= */
+
+.page-banner{
+
+    background:
+    linear-gradient(rgba(6,32,62,.80), rgba(6,32,62,.85)),
+    url(images/TR.jpg);
+
+    background-size:cover;
+    background-position:center;
+
+    padding:170px 0 100px;
+
+    color:#fff;
+
+    text-align:center;
+
+}
+
+.page-banner h1{
+
+    font-size:60px;
+
+    font-weight:800;
+
+    color:#d4af37;
+
+}
+
+.page-banner p{
+
+    font-size:20px;
+
+    margin-top:15px;
+
+    opacity:.9;
+
+}
+/* ================= VISION ================= */
+
+.vision-section{
+
+    background:#f8f9fa;
+
+}
+
+.vision-card{
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.vision-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.vision-icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    background:#0b3d2e;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#d4af37;
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+.section-title{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:#0b3d2e;
+
+}
+
+.section-subtitle{
+
+    color:#666;
+
+}
+/* ================= COMMITTEE ================= */
+
+.committee-section{
+
+    background:#ffffff;
+
+}
+
+.committee-card{
+
+    background:#fff;
+
+    border:1px solid #e5e5e5;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.committee-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#d4af37;
+
+}
+
+.committee-card i{
+
+    font-size:48px;
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+}
+
+.committee-card h4{
+
+    color:#0b3d2e;
+
+    font-weight:700;
+
+}
+
+.committee-card p{
+
+    color:#777;
+
+}
+/* ================= AWARDS ================= */
+
+.awards-section{
+
+    position:relative;
+
+    background:#ffffff;
+
+    overflow:hidden;
+
+}
+
+.awards-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:url("images/senate-pattern.png") center no-repeat;
+
+    background-size:450px;
+
+    opacity:.04;
+
+    pointer-events:none;
+
+}
+
+.award-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.award-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+.award-card i{
+
+    font-size:55px;
+
+    color:#d4af37;
+
+    margin-bottom:20px;
+
+}
+
+.award-card h4{
+
+    color:#0b3d2e;
+
+    font-weight:700;
+
+}
+
+.award-card p{
+
+    color:#666;
+
+    line-height:1.7;
+
+}
+#biography{
+
+    background:#ffffff;
+
+    color:#222;
+
+}
+
+#biography p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+#biography h2{
+
+    color:#0b3d2e;
+
+    font-weight:700;
+
+}
+/* BIOGRAPHY FIX */
+
+#biography,
+.biography-section{
+
+    background:#fff !important;
+    color:#222 !important;
+
+}
+
+#biography h2,
+#biography h3,
+#biography h4{
+
+    color:#0b3d2e !important;
+
+}
+
+#biography p,
+#biography li{
+
+    color:#555 !important;
+
+}
+
+#biography .card{
+
+    background:#fff;
+    color:#222;
+
+}
+/* =====================================
+   BIOGRAPHY SECTION
+===================================== */
+
+.biography-section{
+
+    background:#ffffff;
+    color:#222;
+    padding:100px 0;
+
+}
+
+.biography-section *{
+
+    color:#333;
+
+}
+
+.biography-section .section-label{
+
+    color:#d4af37 !important;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.biography-section .section-title{
+
+    color:#0b3d2e !important;
+
+    font-size:42px;
+
+    font-weight:800;
+
+}
+
+.biography-section .lead{
+
+    color:#555 !important;
+
+}
+
+.biography-section p{
+
+    color:#555 !important;
+
+    line-height:1.9;
+
+}
+
+.biography-section h4{
+
+    color:#0b3d2e !important;
+
+}
+
+.biography-section i{
+
+    color:#d4af37 !important;
+
+}
+.accomplishments-banner{
+
+background:
+linear-gradient(rgba(5,40,30,.75),rgba(5,40,30,.75)),
+url(images/TR.jpg);
+
+background-size:cover;
+background-position:center;
+
+padding:180px 0 120px;
+
+}
+.bill-card{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+border-radius:20px;
+
+padding:35px;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.2);
+
+height:100%;
+
+}
+
+.bill-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+
+.bill-card i{
+
+font-size:50px;
+
+color:#D4AF37;
+
+margin-bottom:20px;
+
+}
+
+.bill-card h4{
+
+color:white;
+
+margin-bottom:15px;
+
+}
+
+.bill-card p{
+
+color:#ddd;
+
+}
+.search-box{
+
+display:flex;
+
+gap:15px;
+
+background:rgba(255,255,255,.08);
+
+padding:20px;
+
+border-radius:18px;
+
+backdrop-filter:blur(18px);
+
+}
+
+.search-box input,
+.search-box select{
+
+height:55px;
+
+}
+.news-card{
+
+transition:.4s;
+
+}
+
+.news-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.news-card img{
+
+transition:.5s;
+
+}
+
+.news-card:hover img{
+
+transform:scale(1.08);
+
+}
+.news-section{
+
+position:relative;
+
+}
+
+.news-section::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:url(images/senate-pattern.png);
+
+background-size:450px;
+
+opacity:.04;
+
+pointer-events:none;
+
+}
+.news-toolbar{
+
+background:#ffffff;
+
+padding:40px 0;
+
+}
+
+#searchNews{
+
+border-radius:40px;
+
+padding:14px 22px;
+
+font-size:16px;
+
+border:2px solid #d4af37;
+
+box-shadow:none;
+
+}
+
+#searchNews:focus{
+
+border-color:#0B5D3B;
+
+}
+.video-card{
+
+background:white;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 12px 30px rgba(0,0,0,.10);
+
+transition:.4s;
+
+height:100%;
+
+}
+
+.video-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.video-card iframe{
+
+width:100%;
+
+height:220px;
+
+border:none;
+
+}
+.gallery-card{
+
+overflow:hidden;
+
+border-radius:15px;
+
+}
+
+.gallery-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+transition:.5s;
+
+cursor:pointer;
+
+}
+
+.gallery-card:hover img{
+
+transform:scale(1.08);
+
+}
+.video-card-body{
+
+padding:20px;
+
+}
+.filter-btn{
+
+background:white;
+
+border:2px solid #d4af37;
+
+color:#0B5D3B;
+
+padding:12px 25px;
+
+border-radius:40px;
+
+margin:5px;
+
+transition:.35s;
+
+font-weight:600;
+
+}
+
+.filter-btn:hover{
+
+background:#d4af37;
+
+color:white;
+
+}
+
+.filter-btn.active{
+
+background:#0B5D3B;
+
+color:white;
+
+border-color:#0B5D3B;
+
+}
+.breaking-news{
+
+display:flex;
+
+align-items:center;
+
+background:#d4af37;
+
+color:white;
+
+font-weight:600;
+
+height:48px;
+
+overflow:hidden;
+
+}
+
+.breaking-news .label{
+
+background:#0B5D3B;
+
+padding:0 25px;
+
+height:48px;
+
+display:flex;
+
+align-items:center;
+
+font-weight:bold;
+
+}
+
+.breaking-news marquee{
+
+padding-left:20px;
+
+}
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width:991px){
+
+    /* Navbar */
+    .navbar{
+        padding:10px;
+    }
+
+    .right-logo{
+        width:70px;
+    }
+
+    .navbar-nav{
+        text-align:center;
+    }
+
+    .social{
+        justify-content:center;
+        margin:20px 0;
+    }
+
+    /* Hero */
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:120px 20px 50px;
+    }
+
+    .hero-banner{
+        width:100%;
+        margin-top:20px;
+    }
+
+    .hero-banner img{
+        width:90%;
+    }
+
+    .hero-title{
+        font-size:52px;
+        line-height:1;
+        letter-spacing:0;
+    }
+
+    .gold{
+        font-size:52px;
+    }
+
+    .hero-text p{
+        font-size:16px;
+    }
+
+    /* Records */
+
+    .records-section .col{
+        flex:0 0 50%;
+        max-width:50%;
+    }
+
+    /* Cards */
+
+    .news-card{
+        margin-bottom:25px;
+    }
+
+    /* Playlist */
+
+    .playlist-item{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .playlist-item img{
+        width:100%;
+    }
+
+    /* Contact */
+
+    .contact-section{
+        text-align:center;
+    }
+
+    /* Search */
+
+    #searchNews{
+        margin-top:20px;
+    }
+
+    .filter-btn{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+}@media (max-width:576px){
+
+.hero-title{
+
+font-size:40px;
+
+}
+
+.gold{
+
+font-size:40px;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.records-section .col{
+
+max-width:100%;
+
+flex:0 0 100%;
+
+}
+
+.news-content{
+
+padding:18px;
+
+}
+
+.main-video iframe{
+
+height:220px;
+
+}
+
+.playlist-item img{
+
+height:auto;
+
+}
+
+.hero-banner img{
+
+width:100%;
+
+}
+
+.learn-btn{
+
+font-size:13px;
+
+padding:10px 18px;
 
 }
 
