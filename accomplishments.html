@@ -1,191 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About | Office of Senator Robin Padilla</title>
+<title>Office of Senator Robin Padilla</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<link rel="stylesheet" href="style.css">
 
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+
+</script>
 
 <body>
 
-<!-- NAVBAR -->
+AOS.init({
+    duration:1000,
+    once:true
+});
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper(".videoSwiper", {
+    loop: true,
+    speed: 800,
+
+    pagination: {
+        el: ".video-pagination",
+        clickable: true,
+    },
+
+    autoplay: { 
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+});
+</script>
+    
+<!-- ================= NAVBAR ================= -->
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
 <div class="container">
-
-<a href="index.html">
-    <img src="" class="right-logo">
+<!-- Logo sa kanan -->
+<a href="index.html" title="Home">
+    <img src="images/senate-logo.png" alt="Senate Logo" class="right-logo">
+</a>
+<a class="navbar-brand" href="index.html">
 </a>
 
 <button class="navbar-toggler"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
 
 <span class="navbar-toggler-icon"></span>
+<span class="news-badge">
+    SENATE OF THE PHILIPPINES
+</span>
 
 </button>
 
 <div class="collapse navbar-collapse" id="menu">
 
-<ul class="navbar-nav ms-auto">
+<ul class="navbar-nav ms-auto custom-menu">
 
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle menu-btn"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown">
+            About
+        </a>
+
+       <ul class="dropdown-menu custom-dropdown">
+
+    <li>
+        <a class="dropdown-item" href="about.html#srp">SRP: Sino si Robin Padilla?</a>
+        
+        </a>
+    </li>
+
+    <li>
+       <a class="dropdown-item" href="about.html#biography">Biography</a>
+    
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#vision">Core Belief & Vision</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#committee">Committee Memberships</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#awards">Awards</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#timeline">Career Timeline</a>
+        </a>
+    </li>
+
+</ul>
+    </li>
+
+   <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle menu-btn"
+       href="#"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
+        Accomplishments/
+        Advocacies
+    </a>
+
+<ul class="dropdown-menu">
+
+<li>
+<a class="dropdown-item" href="accomplishments.html#authored">Authored Bills</a>
+</a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link active" href="about.html">About</a>
+<li>
+<a class="dropdown-item" href="accomplishments.html#coauthored">Co-Authored Bills</a>
+</a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link" href="accomplishments.html">Accomplishments</a>
+<li>
+<a class="dropdown-item" href="accomplishments.html#laws">Bills Passed into Law</a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link" href="news.html">News</a>
+<li>
+<a class="dropdown-item" href="accomplishments.html#reports">Committee Reports</a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link" href="services.html">Services</a>
+<li>
+<a class="dropdown-item" href="accomplishments.html#advocacies">Sectoral Advocacies</a>
 </li>
 
 </ul>
+</li>
+
+   <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle menu-btn"
+       href="#"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
+        News/Media Releases
+    </a>
+
+    <ul class="dropdown-menu">
+
+        <li>
+          <a class="dropdown-item" href="news.html#news">News</a>
+        </li>
+
+        <li>
+          <a class="dropdown-item" href="news.html#press">Media Releases</a>
+        </li>
+
+        <li>
+         <a class="dropdown-item" href="news.html#speeches">Speeches</a>
+        </li>
+
+        <li>
+         <a class="dropdown-item" href="news.html#videos">Videos</a>
+        </li>
+
+        <li>
+          <a class="dropdown-item" href="news.html#gallery">Photo Gallery</a>
+        </li>
+
+    </ul>
+</li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle menu-btn"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown">
+            Services
+        </a>
+
+        <ul class="dropdown-menu">
+            
+             <li><a class="dropdown-item" href="services.html#medical">Medical Assistance</a></li>
+            <li><a class="dropdown-item" href="services.html#education">Educational Assistance</a></li>
+            <li><a class="dropdown-item" href="services.html#faq">Frequently Asked Questions</a></li>
+            <li><a class="dropdown-item" href="services.html#forms">Downloadable Forms</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+
+
+<div class="social">
+
+<a href="https://www.facebook.com/OfficeOfSenatorRobinPadilla" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/your_username/" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+<a href="https://x.com/" target="_blank">
+    <i class="fab fa-x-twitter"></i>
+</a>
+<a href="https://www.tiktok.com/@senatorrobinpadilla" target="_blank">
+    <i class="fab fa-tiktok"></i>
+</a>
+
+<a href="https://www.youtube.com/@OfficialSenatorRobinPadilla" target="_blank">
+    <i class="fab fa-youtube"></i>
+</a>
+
+</a>
 
 </div>
 
+</div>
+
+</div>
+    
 </div>
 
 </nav>
-<section class="page-hero">
+hero
+<section class="page-banner accomplishments-banner">
 
-    <img src="images/SRP Logo Gold.png" class="hero-bg-logo">
+    <div class="container text-center">
 
-    <div class="container">
+        <span class="section-label">
+            SENATE OF THE PHILIPPINES
+        </span>
 
-        <h1>Accomplishments & Advocacies</h1>
+        <h1>
+            Accomplishments & Advocacies
+        </h1>
 
         <p>
-            Legislative achievements, authored bills,
-            committee work, and sectoral advocacies
-            of Senator Robin Padilla.
+            Legislative achievements, authored bills, committee reports,
+            and advocacies of Senator Robin Padilla.
         </p>
 
     </div>
 
 </section>
-<section class="about-page">
+<section id="authored" class="content-section">
 
 <div class="container">
 
-<h2>Biography</h2>
+<div class="text-center">
+
+<span class="section-label">
+LEGISLATIVE RECORDS
+</span>
+
+<h2 class="section-title">
+Authored Bills
+</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+
+<div class="bill-card">
+
+<i class="fas fa-file-signature"></i>
+
+<h4>Senate Bill No. XXXX</h4>
+
+<p>
+Short description of the proposed legislation.
+</p>
+
+<a href="#" class="btn btn-outline-warning">
+Read More
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+
+<footer class="footer">
+
+<div class="container">
 
 <p>
 
-Buong biography dito...
+© 2026 Office of Senator Robin Padilla
+
+</p>
+
+<p>
 
 </p>
 
 </div>
 
-</section>
-<section class="about-page">
+</footer>
 
-<div class="container">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<h2>Core Belief & Vision</h2>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-<p>
+    const counters = document.querySelectorAll(".counter");
 
-Mission at Vision
+    counters.forEach(counter => {
 
-</p>
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
 
-</div>
+        const updateCounter = () => {
 
-</section>
-<section class="about-page">
+            const increment = Math.ceil(target / 100);
 
-<div class="container">
+            if (count < target) {
 
-<h2>Committee Memberships</h2>
+                count += increment;
 
-</div>
+                if (count > target) count = target;
 
-</section>
-<section class="about-page">
+                counter.innerText = count;
 
-<div class="container">
+                requestAnimationFrame(updateCounter);
 
-<h2>Awards & Recognition</h2>
+            }
 
-</div>
+        };
 
-</section>
-<section class="about-page">
+        updateCounter();
 
-<div class="container">
+    });
 
-<h2>Career Timeline</h2>
+});
+const videoSwiper = new Swiper(".videoSwiper", {
 
-</div>
+    loop: true,
 
-</section><section id="authored" class="content-section">
+    allowTouchMove: false, // <-- idagdag ito
 
-    <div class="container">
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 
-        <div class="section-title">
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    }
 
-            <h2>Authored Bills and Resolutions</h2>
+});
+const mainVideo=document.getElementById("mainVideo");
 
-            <p>
-                Legislative measures principally authored by Senator Robin Padilla.
-            </p>
+const items=document.querySelectorAll(".playlist-item");
 
-        </div>
+items.forEach(item=>{
 
-    </div>
+item.addEventListener("click",()=>{
 
-</section><section id="coauthored" class="content-section">
+items.forEach(i=>i.classList.remove("active"));
 
-<div class="container">
+item.classList.add("active");
 
-<h2>Co-Authored Bills and Resolutions</h2>
+const id=item.dataset.video;
 
-</div>
+mainVideo.src="https://www.youtube.com/embed/"+id;
 
-</section><section id="laws" class="content-section">
+});
 
-<div class="container">
+});
+document.addEventListener("DOMContentLoaded", () => {
 
-<h2>Bills Passed into Law</h2>
+    const counters = document.querySelectorAll(".counter");
 
-</div>
+    const speed = 2000;
 
-</section><section id="reports" class="content-section">
+    const observer = new IntersectionObserver((entries) => {
 
-<div class="container">
+        entries.forEach(entry => {
 
-<h2>Committee Reports</h2>
+            if (!entry.isIntersecting) return;
 
-</div>
+            const counter = entry.target;
+            const target = +counter.dataset.target;
 
-</section><section id="advocacies" class="content-section">
+            let start = 0;
+            const startTime = performance.now();
 
-<div class="container">
+            function animate(currentTime){
 
-<h2>Sectoral Advocacies</h2>
+                const progress = Math.min((currentTime - startTime) / speed, 1);
 
-</div>
+                // Ease Out Animation
+                const ease = 1 - Math.pow(1 - progress, 4);
 
-</section>
+                const value = Math.floor(ease * target);
+
+                counter.textContent = value.toLocaleString();
+
+                if(progress < 1){
+                    requestAnimationFrame(animate);
+                }else{
+                    counter.textContent = target.toLocaleString();
+                }
+
+            }
+
+            requestAnimationFrame(animate);
+
+            observer.unobserve(counter);
+
+        });
+
+    },{threshold:.5});
+
+    counters.forEach(counter=>observer.observe(counter));
+
+});
+</script>
+
+
+
+</body>
+</html>
