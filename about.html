@@ -1,140 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>About | Office of Senator Robin Padilla</title>
+<title>Office of Senator Robin Padilla</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<link rel="stylesheet" href="style.css">
 
 </head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+
+</script>
 
 <body>
 
-<!-- NAVBAR -->
+AOS.init({
+    duration:1000,
+    once:true
+});
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+const swiper = new Swiper(".videoSwiper", {
+    loop: true,
+    speed: 800,
+
+    pagination: {
+        el: ".video-pagination",
+        clickable: true,
+    },
+
+    autoplay: { 
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+});
+</script>
+    
+<!-- ================= NAVBAR ================= -->
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
 <div class="container">
-
-<a href="index.html">
-    <img src="" class="right-logo">
+<!-- Logo sa kanan -->
+<a href="index.html" title="Home">
+    <img src="images/senate-logo.png" alt="Senate Logo" class="right-logo">
+</a>
+<a class="navbar-brand" href="index.html">
 </a>
 
 <button class="navbar-toggler"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
+        data-bs-toggle="collapse"
+        data-bs-target="#menu">
 
 <span class="navbar-toggler-icon"></span>
+<span class="news-badge">
+    SENATE OF THE PHILIPPINES
+</span>
 
 </button>
 
 <div class="collapse navbar-collapse" id="menu">
 
-<ul class="navbar-nav ms-auto">
+<ul class="navbar-nav ms-auto custom-menu">
 
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle menu-btn"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown">
+            About
+        </a>
+
+       <ul class="dropdown-menu custom-dropdown">
+
+    <li>
+        <a class="dropdown-item" href="about.html#srp">SRP: Sino si Robin Padilla?</a>
+        
+        </a>
+    </li>
+
+    <li>
+       <a class="dropdown-item" href="about.html#biography">Biography</a>
+    
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#vision">Core Belief & Vision</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#committee">Committee Memberships</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#awards">Awards</a>
+        </a>
+    </li>
+
+    <li>
+        <a class="dropdown-item" href="about.html#timeline">Career Timeline</a>
+        </a>
+    </li>
+
+</ul>
+    </li>
+
+   <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle menu-btn"
+       href="#"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
+        Accomplishments/
+        Advocacies
+    </a>
+
+<ul class="dropdown-menu">
+
+<li>
+<a class="dropdown-item" href="accomplishments.html#authored">Authored Bills</a>
+</a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link active" href="about.html">About</a>
+<li>
+<a class="dropdown-item" href="accomplishments.html#coauthored">Co-Authored Bills</a>
+</a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link" href="accomplishments.html">Accomplishments</a>
+<li>
+<a class="dropdown-item" href="accomplishments.html#laws">Bills Passed into Law</a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link" href="news.html">News</a>
+<li>
+<a class="dropdown-item" href="accomplishments.html#reports">Committee Reports</a>
 </li>
 
-<li class="nav-item">
-<a class="nav-link" href="services.html">Services</a>
+<li>
+<a class="dropdown-item" href="accomplishments.html#advocacies">Sectoral Advocacies</a>
 </li>
 
 </ul>
+</li>
+
+   <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle menu-btn"
+       href="#"
+       role="button"
+       data-bs-toggle="dropdown"
+       aria-expanded="false">
+        News/Media Releases
+    </a>
+
+    <ul class="dropdown-menu">
+
+        <li>
+          <a class="dropdown-item" href="news.html#news">News</a>
+        </li>
+
+        <li>
+          <a class="dropdown-item" href="news.html#press">Media Releases</a>
+        </li>
+
+        <li>
+         <a class="dropdown-item" href="news.html#speeches">Speeches</a>
+        </li>
+
+        <li>
+         <a class="dropdown-item" href="news.html#videos">Videos</a>
+        </li>
+
+        <li>
+          <a class="dropdown-item" href="news.html#gallery">Photo Gallery</a>
+        </li>
+
+    </ul>
+</li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle menu-btn"
+           href="#"
+           role="button"
+           data-bs-toggle="dropdown">
+            Services
+        </a>
+
+        <ul class="dropdown-menu">
+            
+             <li><a class="dropdown-item" href="services.html#medical">Medical Assistance</a></li>
+            <li><a class="dropdown-item" href="services.html#education">Educational Assistance</a></li>
+            <li><a class="dropdown-item" href="services.html#faq">Frequently Asked Questions</a></li>
+            <li><a class="dropdown-item" href="services.html#forms">Downloadable Forms</a>
+            </li>
+        </ul>
+    </li>
+
+</ul>
+
+
+<div class="social">
+
+<a href="https://www.facebook.com/OfficeOfSenatorRobinPadilla" target="_blank">
+    <i class="fab fa-facebook-f"></i>
+</a>
+
+<a href="https://www.instagram.com/your_username/" target="_blank">
+    <i class="fab fa-instagram"></i>
+</a>
+<a href="https://x.com/" target="_blank">
+    <i class="fab fa-x-twitter"></i>
+</a>
+<a href="https://www.tiktok.com/@senatorrobinpadilla" target="_blank">
+    <i class="fab fa-tiktok"></i>
+</a>
+
+<a href="https://www.youtube.com/@OfficialSenatorRobinPadilla" target="_blank">
+    <i class="fab fa-youtube"></i>
+</a>
+
+</a>
 
 </div>
 
+</div>
+
+</div>
+    
 </div>
 
 </nav>
-<section class="page-hero">
 
-<div class="container text-center">
+<section class="page-banner">
 
-<h1>About Senator Robin Padilla</h1>
+    <div class="container">
 
-<p>
-Learn more about the Senator's life,
-public service, and legislative work.
+        <h1>About the Senator</h1>
+
+        <p>
+            Learn more about Senator Robin Padilla's life,
+            public service, and legislative journey.
+        </p>
+
+    </div>
+
+
+
+
+
+<div class="container">
+
+ <h2 class="section-title">
+            Biography
+        </h2>
+
+
+        <div class="bio-card">
+
+            <h4>
+                <i class="fas fa-user"></i>
+                Early Life
+            </h4>
+
+            <p>
+                Robinhood Ferdinand Cariño Padilla was born on
+            <strong>November 23, 1969</strong> in Daet,
+            Camarines Norte.
+                Robin Padilla is the son of Casimero "Roy" Padilla Sr.,
+                a former actor, labor leader, and Governor of Camarines Norte,
+                and actress Lolita Eva Cariño.
+            </p>
+
+            <p>
+                He studied at Siena College of Quezon City and Saint Louis
+                University Boys' High School before pursuing a career in acting.
+                He later earned a Bachelor's Degree in Criminology from the
+                Philippine College of Criminology.
+            </p>
+
+        </div>
+
+        <div class="bio-card">
+
+            <h4>
+                <i class="fas fa-film"></i>
+                Entertainment Career
+            </h4>
+
+            <p>
+                Robin Padilla made his film debut in 1985 and became one of the
+                Philippines' most recognized action stars through blockbuster
+                films such as <em>Maging Sino Ka Man</em> and
+                <em>Ang Utol Kong Hoodlum</em>.
+            </p>
+
+            <p>
+                Throughout his career, he worked with ABS-CBN and GMA Network,
+                earning numerous awards and recognition in the entertainment
+                industry.
+            </p>
+
+        </div>
+
+        <div class="bio-card">
+
+            <h4>
+                <i class="fas fa-landmark"></i>
+                Political Career
+            </h4>
+
+            <p>
+                In 2021, Robin Padilla officially announced his candidacy for
+                the Senate under PDP–Laban.
+            </p>
+
+            <p>
+                He was elected Senator in 2022 after receiving the highest
+                number of votes nationwide and currently serves as Chairman
+                of the Senate Committee on Constitutional Amendments and
+                Revision of Codes and the Committee on Cultural Communities
+                and Muslim Affairs.
+            </p>
+
+        </div>
+
+        <div class="bio-card">
+
+            <h4>
+                <i class="fas fa-heart"></i>
+                Family
+            </h4>
+
+            <p>
+                Robin Padilla married Liezl Sicangco in 1996 and later married
+                actress Mariel Rodriguez in 2010. He is a proud father of
+                five children.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= CORE BELIEF ================= -->
+
+<section id="vision" class="vision-section py-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+Core Belief & Vision
+</h2>
+
+<p class="section-subtitle">
+Guided by faith, patriotism, and genuine public service.
 </p>
 
 </div>
 
+<div class="row g-4">
+
+<div class="col-md-6">
+
+<div class="vision-card">
+
+<div class="vision-icon">
+<i class="fas fa-scale-balanced"></i>
+</div>
+
+<h3>Core Belief</h3>
+
+<p>
+To uphold justice, strengthen national unity, preserve Filipino culture,
+and ensure that every Filipino has equal opportunities through effective legislation.
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="vision-card">
+
+<div class="vision-icon">
+<i class="fas fa-eye"></i>
+</div>
+
+<h3>Vision</h3>
+
+<p>
+To build a peaceful, progressive, and inclusive Philippines where every citizen
+can live with dignity, security, and hope for future generations.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
-<section class="about-page">
+<!-- ================= COMMITTEE MEMBERSHIPS ================= -->
+
+<section id="committee" class="committee-section py-5">
 
 <div class="container">
 
-<h2>Biography</h2>
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+Committee Memberships
+</h2>
+
+<p class="section-subtitle">
+Current committee memberships in the Senate of the Philippines.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="committee-card">
+<i class="fas fa-landmark"></i>
+<h4>Public Order</h4>
+<p>Committee Member</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="committee-card">
+<i class="fas fa-scale-balanced"></i>
+<h4>Justice</h4>
+<p>Committee Member</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="committee-card">
+<i class="fas fa-graduation-cap"></i>
+<h4>Education</h4>
+<p>Committee Member</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="committee-card">
+<i class="fas fa-shield-halved"></i>
+<h4>National Defense</h4>
+<p>Committee Member</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="committee-card">
+<i class="fas fa-city"></i>
+<h4>Local Government</h4>
+<p>Committee Member</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="committee-card">
+<i class="fas fa-bullhorn"></i>
+<h4>Public Information</h4>
+<p>Committee Member</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= AWARDS ================= -->
+
+<section id="awards" class="awards-section py-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+Awards & Recognition
+</h2>
+
+<p class="section-subtitle">
+Notable achievements and recognitions throughout Senator Robin Padilla's career.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4 col-md-6">
+<div class="award-card">
+<i class="fas fa-award"></i>
+<h4>Public Service Award</h4>
+<p>Recognition for contributions to public service and community development.</p>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+<div class="award-card">
+<i class="fas fa-medal"></i>
+<h4>National Recognition</h4>
+<p>Honored for promoting peace, unity, and national development.</p>
+</div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+<div class="award-card">
+<i class="fas fa-star"></i>
+<h4>Leadership Excellence</h4>
+<p>Acknowledged for leadership and dedication to legislative service.</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+</section>
+<!-- ================= FOOTER ================= -->
+
+
+<footer class="footer">
+
+<div class="container">
 
 <p>
 
-Buong biography dito...
+© 2026 Office of Senator Robin Padilla
+
+</p>
+
+<p>
 
 </p>
 
 </div>
 
-</section>
-<section class="about-page">
+</footer>
 
-<div class="container">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<h2>Core Belief & Vision</h2>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
 
-<p>
+    const counters = document.querySelectorAll(".counter");
 
-Mission at Vision
+    counters.forEach(counter => {
 
-</p>
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
 
-</div>
+        const updateCounter = () => {
 
-</section>
-<section class="about-page">
+            const increment = Math.ceil(target / 100);
 
-<div class="container">
+            if (count < target) {
 
-<h2>Committee Memberships</h2>
+                count += increment;
 
-</div>
+                if (count > target) count = target;
 
-</section>
-<section class="about-page">
+                counter.innerText = count;
 
-<div class="container">
+                requestAnimationFrame(updateCounter);
 
-<h2>Awards & Recognition</h2>
+            }
 
-</div>
+        };
 
-</section>
-<section class="about-page">
+        updateCounter();
 
-<div class="container">
+    });
 
-<h2>Career Timeline</h2>
+});
+const videoSwiper = new Swiper(".videoSwiper", {
 
-</div>
+    loop: true,
 
-</section>
+    allowTouchMove: false, // <-- idagdag ito
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    }
+
+});
+const mainVideo=document.getElementById("mainVideo");
+
+const items=document.querySelectorAll(".playlist-item");
+
+items.forEach(item=>{
+
+item.addEventListener("click",()=>{
+
+items.forEach(i=>i.classList.remove("active"));
+
+item.classList.add("active");
+
+const id=item.dataset.video;
+
+mainVideo.src="https://www.youtube.com/embed/"+id;
+
+});
+
+});
+document.addEventListener("DOMContentLoaded", () => {
+
+    const counters = document.querySelectorAll(".counter");
+
+    const speed = 2000;
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (!entry.isIntersecting) return;
+
+            const counter = entry.target;
+            const target = +counter.dataset.target;
+
+            let start = 0;
+            const startTime = performance.now();
+
+            function animate(currentTime){
+
+                const progress = Math.min((currentTime - startTime) / speed, 1);
+
+                // Ease Out Animation
+                const ease = 1 - Math.pow(1 - progress, 4);
+
+                const value = Math.floor(ease * target);
+
+                counter.textContent = value.toLocaleString();
+
+                if(progress < 1){
+                    requestAnimationFrame(animate);
+                }else{
+                    counter.textContent = target.toLocaleString();
+                }
+
+            }
+
+            requestAnimationFrame(animate);
+
+            observer.unobserve(counter);
+
+        });
+
+    },{threshold:.5});
+
+    counters.forEach(counter=>observer.observe(counter));
+
+});
+</script>
+
+
+
+</body>
+</html>
