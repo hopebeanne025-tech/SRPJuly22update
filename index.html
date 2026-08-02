@@ -8,7 +8,7 @@
 <title>Office of Senator Robin Padilla</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -94,8 +94,8 @@ const swiper = new Swiper(".videoSwiper", {
     </li>
 
     <li>
-       <a class="dropdown-item" href="about.html#biography">Biography</a>
-        </a>
+       <a class="dropdown-item" href="about.html?bio=true">Biography</a>
+        
     </li>
 
     <li>
@@ -248,49 +248,49 @@ const swiper = new Swiper(".videoSwiper", {
 <!-- ================= HERO ================= -->
 
 <section class="hero">
-<div class="hero-banner">
-    <img src="images/robinlogo2.png" class="hero-img img-fluid">
-</div>
-<div class="container">
 
-<div class="row align-items-center">
+    <div class="container">
 
-<div class="col-lg-6">
+        <div class="row align-items-center gy-5">
 
-<div class="hero-image">
+            <!-- LEFT -->
+            <div class="col-lg-6 ps-lg-5">
 
-</div>
+                <div class="hero-banner">
+                    <img src="images/robinlogo2.png"
+                         class="hero-img img-fluid"
+                         alt="Robin Padilla">
+                </div>
 
-<div class="col-lg-6">
+            </div>
+
+            <!-- RIGHT -->
+            <div class="col-lg-6">
+
+                <div class="hero-text">
+
+                    <h1 class="hero-title">
+                        <span class="word sino"><span class="gold">S</span>ino si</span><br>
+                        <span class="word robin"><span class="gold">R</span>obin</span><br>
+                        <span class="word padilla"><span class="gold">P</span>adilla</span>
+                    </h1>
+
+                    <a class="learn-btn"
+                       data-bs-toggle="offcanvas"
+                       data-bs-target="#bioOffcanvas">
+
+                        <i class="fa-solid fa-play"></i>
+                        LEARN MORE
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-
-</div>
-
-<div class="hero-text">
-
-<h1 class="hero-title">
-    <span class="word sino"><span class="gold">S</span>ino&nbsp;si</span><br>
-
-    <span class="word robin"><span class="gold">R</span>obin</span><br>
-
-    <span class="word padilla"><span class="gold">P</span>adilla</span>
-</h1>
-
-<p>
-
-</p>
-
-<a href="#" class="learn-btn"
-   data-bs-toggle="offcanvas"
-   data-bs-target="#robinBio">
-    <span class="play-icon">
-        <i class="fas fa-play"></i>
-    </span>
-    LEARN MORE
-</a>
-
-</div>
-
 
 </section>
 
@@ -450,7 +450,7 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 <p class="section-subtitle">
 
 </p>
-
+    
 <div class="row">
 <div class="section-heading text-center mb-5">
 
@@ -468,7 +468,7 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 
             <iframe id="mainVideo"
 
-            src="https://www.youtube.com/embed/zJOGQoWnppk"
+            src="https://www.youtube.com/embed/HSybZ6ip-2o"
 
             allowfullscreen></iframe>
 
@@ -498,7 +498,7 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 <div class="playlist-item" data-video="J9k0DeGr4m0">
 
     <div class="thumb">
-        <img src="https://img.youtube.com/vi/J9k0DeGr4m0/mqdefault.jpg">
+        <img src="https://img.youtube.com/vi/zJOGQoWnppk/mqdefault.jpg">
         <i class="fa-solid fa-circle-play"></i>
     </div>
 
@@ -515,61 +515,44 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 
     <div class="container">
 
-        <!-- Section Title -->
-        <div class="text-center mb-5">
+<!-- Section Title -->
+<div class="text-center mb-5">
+    <h1 class="contact-title">CONTACT US</h1>
+</div>
 
-            <h1 class="contact-title">CONTACT US</h1>
+<div class="contact-form-wrapper">
 
-        
+    <form id="contactForm">
 
-        </div>
+        <input
+            type="text"
+            name="name"
+            class="form-control mb-3"
+            placeholder="Your Name"
+            required>
 
-        <!-- Contact Form -->
-        <div class="row justify-content-center">
+        <input
+            type="email"
+            name="email"
+            class="form-control mb-3"
+            placeholder="Email Address"
+            required>
 
-            <div class="col-lg-8">
+        <textarea
+            name="message"
+            class="form-control mb-3"
+            rows="5"
+            placeholder="Your Message"
+            required></textarea>
 
-                <div class="contact-card">
+        <button type="submit" class="btn send-btn">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Message
+        </button>
 
-                    <input
-                        type="text"
-                        class="form-control mb-3"
-                        placeholder="Your Name">
+    </form>
 
-                    <input
-                        type="email"
-                        class="form-control mb-3"
-                        placeholder="Email Address">
-
-                    <textarea
-                        class="form-control mb-3"
-                        rows="6"
-                        placeholder="Your Message"></textarea>
-
-                    <div class="mb-4">
-
-                        <label for="attachment" class="attach-btn">
-
-                            <i class="fa-solid fa-paperclip"></i>
-
-                            Attach File
-
-                        </label>
-
-                        <input
-                            type="file"
-                            id="attachment"
-                            class="d-none"
-                            accept=".pdf,.doc,.docx,.jpg,.jpeg,.png">
-
-                    </div>
-
-                    <button class="btn send-btn">
-    <i class="fa-solid fa-paper-plane"></i>
-    Send
-</button>
-
-                </div>
+</div>
 
             </div>
 
@@ -625,39 +608,42 @@ AT MALAYANG PAGPAPAHAYAG</h4>
         </a>
 
     </div>
+<div class="footer-bottom">
 
+    <p>
+        Copyright © 2026 <strong>Office of Senator Robin Padilla</strong>.
+        All Rights Reserved.
+    </p>
+
+    <a href="privacy-policy.html">Privacy Policy</a>
+
+</div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function(){
 
-    const counters = document.querySelectorAll(".counter");
+    const backToTop = document.getElementById("backToTop");
 
-    counters.forEach(counter => {
+    if(!backToTop) return;
 
-        const target = +counter.getAttribute("data-target");
-        let count = 0;
+    window.addEventListener("scroll", function(){
 
-        const updateCounter = () => {
+        if(window.scrollY > 300){
+            backToTop.style.display = "flex";
+        }else{
+            backToTop.style.display = "none";
+        }
 
-            const increment = Math.ceil(target / 100);
+    });
 
-            if (count < target) {
+    backToTop.addEventListener("click", function(){
 
-                count += increment;
-
-                if (count > target) count = target;
-
-                counter.innerText = count;
-
-                requestAnimationFrame(updateCounter);
-
-            }
-
-        };
-
-        updateCounter();
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
 
     });
 
@@ -749,30 +735,190 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const backToTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", () => {
+window.onscroll = function(){
 
-    if(window.scrollY > 300){
-        backToTop.classList.add("show");
+    if(document.documentElement.scrollTop > 300){
+        backToTop.style.display = "block";
     }else{
-        backToTop.classList.remove("show");
+        backToTop.style.display = "none";
     }
 
-});
+};
 
-backToTop.addEventListener("click", function(e){
-
-    e.preventDefault();
+backToTop.onclick = function(){
 
     window.scrollTo({
         top:0,
         behavior:"smooth"
     });
 
-});
+};
 </script>
 
-<a href="#" id="backToTop">▲</a>
-    <i class="fas fa-chevron-up"></i>
-</a>
+<button id="backToTop" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("3H2spB5wigUGR_sXO");
+</script>
+<script>
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_928wl1o",
+        "template_hniebmb",
+        this
+    )
+    .then(function(){
+
+        alert("Message sent successfully!");
+
+        form.reset();
+
+    }, function(error){
+
+        alert("Failed to send message.");
+
+        console.log(error);
+
+    });
+
+});
+</script>
+<div class="offcanvas offcanvas-end biography-panel"
+     tabindex="-1"
+     id="bioOffcanvas">
+
+    <div class="offcanvas-header">
+
+        <h4 class="offcanvas-title">
+            <i class="fa-solid fa-user-tie me-2"></i>
+            Biography
+        </h4>
+
+        <button type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"></button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <!-- Photo -->
+        <div class="text-center">
+
+            <img src="images/TR3.jpg"
+                 class="bio-photo"
+                 alt="Senator Robin Padilla">
+
+        </div>
+
+        <h3 class="bio-name">
+            Senator Robinhood "Robin" Cariño Padilla
+        </h3>
+
+        <p class="bio-position">
+            Senator of the Republic of the Philippines
+        </p>
+
+        <hr>
+
+        <div class="bio-section">
+
+            <h5>
+                <i class="fa-solid fa-book-open"></i>
+                Early Life
+            </h5>
+
+            <p>
+                Robinhood Cariño Padilla was born on November 23, 1969.
+                He became one of the country's most recognized actors,
+                admired for portraying roles that reflected courage,
+                patriotism, and justice.
+            </p>
+
+        </div>
+
+        <div class="bio-section">
+
+            <h5>
+                <i class="fa-solid fa-landmark"></i>
+                Public Service
+            </h5>
+
+            <p>
+                In 2022, he was elected Senator of the Republic of the
+                Philippines with the highest number of votes nationwide.
+                As a legislator, he champions constitutional reforms,
+                education, freedom of information, cultural preservation,
+                and programs that uplift Muslim Filipinos and Indigenous
+                Peoples.
+            </p>
+
+        </div>
+
+        <div class="bio-section">
+
+            <h5>
+                <i class="fa-solid fa-scale-balanced"></i>
+                Legislative Priorities
+            </h5>
+
+            <ul class="bio-list">
+
+                <li>Constitutional Reform</li>
+
+                <li>Freedom of Information</li>
+
+                <li>Education and Youth Development</li>
+
+                <li>Peace and Development</li>
+
+                <li>Cultural Preservation</li>
+
+                <li>Muslim Filipino Welfare</li>
+
+            </ul>
+
+        </div>
+
+        <div class="bio-section">
+
+            <h5>
+                <i class="fa-solid fa-eye"></i>
+                Vision
+            </h5>
+
+            <p>
+                To build a stronger and more united Philippines through
+                inclusive governance, effective legislation, transparency,
+                and equal opportunities for every Filipino.
+            </p>
+
+        </div>
+
+        <div class="text-center mt-4">
+
+            <a href="about.html#biography"
+               class="btn biography-btn">
+
+                Read Full Biography
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
 </body>
 </html>
